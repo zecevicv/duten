@@ -1,0 +1,384 @@
+/* #Fonts
+================================================== */
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 100;
+  src: url("../font/MaisonNeueExtraThin.otf");
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 200;
+  src: url("../font/MaisonNeueThin.otf");
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  src: url("../font/MaisonNeueLight.otf");
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 400;
+  src: url("../font/MaisonNeueMedium.otf");
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  font-weight: 800;
+  src: url("../font/MaisonNeueExtraBold.otf");
+}
+
+/* #Global
+================================================== */
+body {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  background-color: #EDEDED;
+  color: black;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* #Container
+================================================== */
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 56px;
+  margin: 0 auto;
+}
+
+/* #Typography
+================================================== */
+.h1 {
+  font-size: 130px;
+}
+
+.h2 {
+  font-size: 90px;
+  line-height: 1.15;
+}
+
+/* #Typography Helpers
+================================================== */
+.ultra-light {
+  font-weight: 100 !important;
+}
+
+.light {
+  font-weight: 200 !important;
+}
+
+.regular {
+  font-weight: 400 !important;
+}
+
+.medium {
+  font-weight: 500 !important;
+}
+
+.semi-bold {
+  font-weight: 600 !important;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.ultra-bold {
+  font-weight: 800 !important;
+}
+
+.black {
+  font-weight: 900 !important;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+/* #Header
+================================================== */
+.header {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 25px 0;
+}
+
+.header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* #Hero
+================================================== */
+.hero video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero .text {
+  position: relative;
+  transform: translateY(-50%);
+}
+
+/* #Home About
+================================================== */
+.home-about {
+  font-size: 60px;
+  font-weight: 400;
+
+  margin: 105px 0 350px 0;
+}
+
+.home-about .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.home-about .img {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.home-about .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 65%;
+  transform: translateY(-50%);
+}
+
+/* #Product Slider
+================================================== */
+/* Thumbs */
+.product-slider .thumbs-slider {
+  padding: 0 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 35px;
+}
+
+.product-slider .thumbs-slider h3 {
+  flex-shrink: 0;
+  margin-right: 90px;
+}
+
+.product-slider .thumbs-slider p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: #80878E;
+  padding-left: 10px;
+}
+
+.product-slider .thumbs-slider .dot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 22px;
+}
+
+.product-slider .thumbs-slider .swiper {
+  width: 100%;
+}
+
+.product-slider .thumbs-slider .swiper-slide-active .dot {
+  transform: scale(2);
+}
+
+.product-slider .thumbs-slider .swiper-slide {
+  cursor: pointer;
+}
+
+/* Slider */
+.product-slider .slider .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-slider .slider .img {
+  height: 860px;
+  position: relative;
+  z-index: 1;
+}
+
+.product-slider .slider .img img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.product-slider .slider .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.product-slider .slider .text p {
+  font-size: 660px;
+  text-align: center;
+  line-height: .75;
+  color: white;
+}
+
+.product-slider .slider .text p span {
+  display: block;
+  text-align: right;
+  font-size: 128px;
+  color: #C6C6C6;
+  margin-right: 56px;
+}
+
+/* #Product Demo
+================================================== */
+.product-demo {
+  margin-top: 300px;
+}
+
+/* Logo */
+.product-demo .product-logo .logo img {
+  width: 291px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*  Img */
+.product-demo .product-img {
+  margin-top: 50px;
+  height: 764px;
+  position: relative;
+}
+
+.product-demo .product-img .text {
+  font-size: 318px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.product-demo .product-img .img img {
+  margin: 0 auto;
+}
+
+/* #Program Details
+================================================== */
+.program-details {
+  font-size: 50px;
+  font-weight: 400;
+  color: #80878E;
+
+  margin: 80px 0 230px 0;
+}
+
+.program-details .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.program-details .img,
+.program-details .text {
+  width: 48%;
+  flex-shrink: 0;
+}
+
+.program-details .text p {
+  margin-bottom: 100px;
+}
+
+.program-details .text a,
+.program-details .text a img {
+  display: inline-block;
+  vertical-align: middle;
+}
