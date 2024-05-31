@@ -13,4 +13,3 @@ let productSwiper = new Swiper('.product-slider .slider .swiper', {
 
 // modules
 pngSequence.init();
-console.log(window)
