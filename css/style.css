@@ -175,12 +175,21 @@ button {
   top: 0;
   left: 0;
   padding: 25px 0;
+  mix-blend-mode: difference;
 }
 
 .header .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-logo img {
+  height: 52px;
+}
+
+.header-hamburger img {
+  height: 16px;
 }
 
 /* #Hero
