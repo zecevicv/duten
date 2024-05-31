@@ -155,15 +155,15 @@ button {
 }
 
 .text-left {
-  text-align: left!important;
+  text-align: left !important;
 }
 
 .text-center {
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .text-right {
-  text-align: right!important;
+  text-align: right !important;
 }
 
 /* #Header
@@ -333,6 +333,8 @@ button {
   margin-top: 50px;
   height: 764px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .product-demo .product-img .text {
@@ -346,8 +348,20 @@ button {
   z-index: -1;
 }
 
+.product-demo .product-img .img {
+  position: relative;
+  aspect-ratio: 2560 / 1440;
+  max-width: 1364px;
+  transform: translateX(-56px)
+}
+
 .product-demo .product-img .img img {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* #Program Details
