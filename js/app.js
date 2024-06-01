@@ -1,4 +1,5 @@
 import pngSequence from './pngSequence.js';
+import textAnimation from './textAnimation.js';
 
 // Homepage Product Slider
 let thumbsSwiper = new Swiper('.product-slider .thumbs-slider .swiper', {
@@ -13,3 +14,4 @@ let productSwiper = new Swiper('.product-slider .slider .swiper', {
 
 // modules
 pngSequence.init();
+textAnimation.init();
