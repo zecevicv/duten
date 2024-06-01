@@ -6,20 +6,12 @@ const textAnimation = {
 		gsap.registerPlugin(ScrollTrigger);
 		setTimeout(() => {
 			this.handleSplit();
-			this.handleStyles();
 			this.handleEvents();
 		}, 500);
 	},
 
 	handleSplit: function () {
 		this.split = new SplitType('.js-split');
-	},
-
-	handleStyles: function () {
-		const lines = document.querySelectorAll('.line');
-		lines.forEach((line) => {
-			line.style.overflow = 'hidden';
-		});
 	},
 
 	handleEvents: function () {
