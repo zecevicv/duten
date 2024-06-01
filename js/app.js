@@ -1,17 +1,19 @@
 import pngSequence from './pngSequence.js';
-import textAnimation from './textAnimation.js';
+import textScrollAnimation from './textScrollAnimation.js';
+import onloadAnimation from './onloadAnimation.js';
 
 // Homepage Product Slider
 let thumbsSwiper = new Swiper('.product-slider .thumbs-slider .swiper', {
-  slidesPerView: 4,
+	slidesPerView: 4,
 });
 
 let productSwiper = new Swiper('.product-slider .slider .swiper', {
-  thumbs: {
-    swiper: thumbsSwiper,
-  },
+	thumbs: {
+		swiper: thumbsSwiper,
+	},
 });
 
 // modules
 pngSequence.init();
-textAnimation.init();
+textScrollAnimation.init();
+onloadAnimation.init();

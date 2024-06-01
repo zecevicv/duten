@@ -30,6 +30,19 @@
   src: url("../font/MaisonNeueExtraBold.otf");
 }
 
+/* #Keyframes
+================================================== */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(100%);
+  }
+}
+
+/* animation: 5s slide infinite linear
+
 /* #Global
 ================================================== */
 body {
@@ -176,6 +189,7 @@ button {
   left: 0;
   padding: 25px 0;
   mix-blend-mode: difference;
+  opacity: 0;
 }
 
 .header .wrap {
@@ -203,7 +217,8 @@ button {
 
 .hero .text {
   position: relative;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
+  opacity: 0;
 }
 
 /* #Home About

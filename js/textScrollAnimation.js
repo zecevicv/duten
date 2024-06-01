@@ -1,4 +1,4 @@
-const textAnimation = {
+const textScrollAnimation = {
 	splitElements: document.querySelectorAll('.js-split'),
 	split: null,
 
@@ -42,4 +42,4 @@ const textAnimation = {
 	},
 };
 
-export default textAnimation;
+export default textScrollAnimation;
