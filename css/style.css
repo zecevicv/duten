@@ -217,7 +217,6 @@ button {
 
 .hero .text {
   position: relative;
-  /* transform: translateY(-50%); */
   opacity: 0;
 }
 
