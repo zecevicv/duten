@@ -37,11 +37,9 @@
   from {
     transform: translateX(0);
   } to {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
 }
-
-/* animation: 5s slide infinite linear
 
 /* #Global
 ================================================== */
@@ -342,6 +340,40 @@ button {
 ================================================== */
 .product-demo {
   margin-top: 300px;
+}
+
+.product-demo .product-logo .lines {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-demo .product-logo .lines::before,
+.product-demo .product-logo .lines::after {
+  content: '';
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.product-demo .product-logo .lines::before {
+  background: linear-gradient(to left, #EDEDED, transparent);
+  right: 0;
+}
+
+.product-demo .product-logo .lines::after {
+  background: linear-gradient(to right, #EDEDED, transparent);
+  left: 0;
+}
+
+.product-demo .product-logo .lines-wrap {
+  display: flex;
+}
+
+.product-demo .product-logo .lines img {
+  animation: 10s slide infinite linear;
+  height: 132px;
 }
 
 /* Logo */
