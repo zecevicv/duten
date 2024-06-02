@@ -464,6 +464,15 @@ button {
   vertical-align: middle;
 }
 
+.program-details img {
+  filter: grayscale(1);
+  transition: 500ms filter ease-in-out;
+}
+
+.program-details img.active {
+  filter: grayscale(0);
+}
+
 /* #Libraries
 ================================================== */
 .line {

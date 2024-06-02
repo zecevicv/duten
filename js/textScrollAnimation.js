@@ -25,12 +25,17 @@ const textScrollAnimation = {
 		const preAnimationElements = animationTrigger.querySelectorAll('.js-pre-animation-element');
 		const words = animationTrigger.querySelectorAll('.word');
 		const postAnimationElements = animationTrigger.querySelectorAll('.js-post-animation-element');
-		// eslint-disable-next-line
+		const classAnimationElement = animationTrigger.querySelector('.js-class-animation-element');
 		const tl = gsap
 			.timeline({
 				scrollTrigger: {
 					trigger: animationTrigger,
 					start: 'top 90%',
+					onEnter: () => {
+						if (classAnimationElement) {
+							classAnimationElement.classList.add('active');
+						}
+					},
 				},
 			})
 			.add('pre-animation')
