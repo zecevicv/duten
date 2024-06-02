@@ -1,6 +1,7 @@
 const pngSequence = {
 	animationBlock: document.querySelector('.js-scrollbox-animation'),
 	frames: document.querySelectorAll('.js-scrollbox-frame'),
+	stickyWrap: document.querySelector('.js-scrollbox-sticky-wrap'),
 
 	currentFrame: { value: 0 },
 
@@ -8,6 +9,7 @@ const pngSequence = {
 
 	init: function () {
 		this.initialSetup();
+		this.initSticky();
 		this.detectScroll();
 	},
 
@@ -16,6 +18,17 @@ const pngSequence = {
 			frame.style.visibility = 'hidden';
 		});
 		this.frames[0].style.visibility = 'visible';
+	},
+
+	initSticky: function () {
+		window.addEventListener('load', () => {
+			const windowHeight = window.innerHeight;
+			const imageHeight = this.stickyWrap.offsetHeight;
+
+			const top = (windowHeight - imageHeight) / 2;
+
+			this.stickyWrap.style.top = `${top}px`;
+		});
 	},
 
 	detectScroll: function () {
