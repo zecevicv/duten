@@ -281,13 +281,15 @@ button {
   border-radius: 50%;
   background-color: black;
   margin-right: 22px;
+
+  transition: all .3s ease;
 }
 
 .product-slider .thumbs-slider .swiper {
   width: 100%;
 }
 
-.product-slider .thumbs-slider .swiper-slide-active .dot {
+.product-slider .thumbs-slider .swiper-slide-thumb-active .dot {
   transform: scale(2);
 }
 
