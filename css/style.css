@@ -36,7 +36,9 @@
 @keyframes slide {
   from {
     transform: translateX(0);
-  } to {
+  }
+
+  to {
     transform: translateX(-50%);
   }
 }
@@ -406,7 +408,7 @@ button {
 
 .product-demo .img-sticky-wrap {
   position: sticky;
-  top: 0;
+  top: 14.5vh;
   align-self: flex-start;
 }
 
