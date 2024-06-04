@@ -479,16 +479,60 @@ button {
 
 .program-details img {
   filter: grayscale(1);
-  transition: 500ms filter ease-in-out;
-  transition-delay: .5s;
+  transition: 1s all ease-in-out;
+  transition-delay: 1s;
+
+  opacity: 1;
 }
 
 .program-details img.active {
   filter: grayscale(0);
+  opacity: .9;
+}
+
+.program-details .img {
+  position: relative;
+
+  -webkit-mask-image: url(../img/home/phoenix-mask.png);
+  mask-image: url(../img/home/phoenix-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  animation: shake 40s;
+  animation-iteration-count: infinite;
+}
+
+.program-details .img video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+  z-index: -1;
 }
 
 /* #Libraries
 ================================================== */
 .line {
   overflow: hidden;
+}
+
+/* #Keyframes
+================================================== */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
