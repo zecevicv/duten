@@ -4,10 +4,10 @@ import onloadAnimation from './onloadAnimation.js';
 
 // Homepage Product Slider
 let thumbsSwiper = new Swiper('.product-slider .thumbs-slider .swiper', {
-	slidesPerView: 4,
+	slidesPerView: 6,
 });
 
-let productSwiper = new Swiper('.product-slider .slider .swiper', {
+new Swiper('.product-slider .slider .swiper', {
 	thumbs: {
 		swiper: thumbsSwiper,
 	},

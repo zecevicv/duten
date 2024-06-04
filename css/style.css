@@ -225,6 +225,7 @@ button {
 .home-about {
   font-size: 60px;
   font-weight: 400;
+  line-height: 1.05;
 
   margin: 105px 0 350px 0;
 }
@@ -264,7 +265,8 @@ button {
 
 .product-slider .thumbs-slider h3 {
   flex-shrink: 0;
-  margin-right: 90px;
+  margin-right: 80px;
+  font-size: 35px;
 }
 
 .product-slider .thumbs-slider p {
@@ -274,6 +276,8 @@ button {
 
   color: #80878E;
   padding-left: 10px;
+  font-weight: 300;
+  transition: all .3s ease;
 }
 
 .product-slider .thumbs-slider .dot {
@@ -283,6 +287,7 @@ button {
   border-radius: 50%;
   background-color: black;
   margin-right: 22px;
+  border: 1px solid white;
 
   transition: all .3s ease;
 }
@@ -292,7 +297,11 @@ button {
 }
 
 .product-slider .thumbs-slider .swiper-slide-thumb-active .dot {
-  transform: scale(2);
+  transform: scale(1.8);
+}
+
+.product-slider .thumbs-slider .swiper-slide-thumb-active p {
+  color: black;
 }
 
 .product-slider .thumbs-slider .swiper-slide {
@@ -421,7 +430,7 @@ button {
 
 .product-demo .product-img .img {
   position: relative;
-  height: 71vh;
+  height: 81vh;
   aspect-ratio: 2560 / 1440;
   max-width: 1364px;
   transform: translateX(-56px)
@@ -442,7 +451,7 @@ button {
   font-weight: 400;
   color: #80878E;
 
-  margin: 80px 0 230px 0;
+  margin: 60px 0 120px 0;
 }
 
 .program-details .wrap {
@@ -471,6 +480,7 @@ button {
 .program-details img {
   filter: grayscale(1);
   transition: 500ms filter ease-in-out;
+  transition-delay: .5s;
 }
 
 .program-details img.active {
